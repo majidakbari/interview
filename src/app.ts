@@ -1,21 +1,21 @@
-// 1. Reverses the given string input
+// 1.Reverses the given string input
 const reverseString = (input: string): string => {
     const arrayString = input.split('');
     return arrayString.reverse().join('');
 };
 
-// 2. Reverses a number
+// 2.Reverses a number
 const reverseNumber = (input: number): number => {
     const arrayString = input.toString().split('');
     return +arrayString.reverse().join('');
 };
 
-// 3. Checks whether the given input is palindrome or not.
+// 3.Checks whether the given input is palindrome or not.
 const isPalindrome = (input: string): boolean => {
     return input == input.split('').reverse().join('');
 };
 
-// 4. Returns all possible letter comibinations of a given input.
+// 4.Returns all possible letter comibinations of a given input.
 const subStrings = (input: string): string[] => {
     const letters = input.split('');
     const combinations = Math.pow(2, input.length);
@@ -35,20 +35,24 @@ const subStrings = (input: string): string[] => {
     return result;
 };
 
+// 5.Puts a given input letters in alphabetical order
 const alphabeticalOrder = (input: string): string => {
     return input.split('').sort().join('');
 };
 
+// 6.Converts the first letter to upper case
+const ucFirst = (input: string): string => {
+    return input[0].toUpperCase() + input.substring(1);
+};
+
+// 7.Converts the first letter of each word to upper case
 const ucFirstPhrase = (input: string): string => {
     const words = input.split(' ');
 
     return words.map((element) => ucFirst(element)).join(' ');
 };
 
-const ucFirst = (input: string): string => {
-    return input[0].toUpperCase() + input.substring(1);
-};
-
+// 8.Finds the longest word in a given input
 const findLongestWord = (input: string): string => {
     const words = input.split(' ');
     let longestLength = 0;
@@ -64,6 +68,7 @@ const findLongestWord = (input: string): string => {
     return words[longestIndex];
 };
 
+// 9.Finds the number of vowels in a given input
 const vowelsCount = (input: string): number => {
     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
     let result = 0;
@@ -76,6 +81,7 @@ const vowelsCount = (input: string): number => {
     return result;
 };
 
+// 10. Checks whether the given number is prime or not.
 const isPrime = (input: number): boolean => {
     if (input <= 1) {
         return false;
@@ -420,5 +426,3 @@ const findLongestPalindrome = (input: string): string => {
 //     }
 //   ]
 // */
-
-console.log(subStrings('abc'))
