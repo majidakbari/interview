@@ -1,18 +1,21 @@
-// 1.reverses the given string input
-export const reverseString = (input: string): string => {
+// 1. Reverses the given string input
+const reverseString = (input: string): string => {
     const arrayString = input.split('');
     return arrayString.reverse().join('');
 };
 
+// 2. Reverses a number
 const reverseNumber = (input: number): number => {
     const arrayString = input.toString().split('');
     return +arrayString.reverse().join('');
 };
 
+// 3. Checks whether the given input is palindrome or not.
 const isPalindrome = (input: string): boolean => {
     return input == input.split('').reverse().join('');
 };
 
+// 4. Returns all possible letter comibinations of a given input.
 const subStrings = (input: string): string[] => {
     const letters = input.split('');
     const combinations = Math.pow(2, input.length);
@@ -24,7 +27,9 @@ const subStrings = (input: string): string[] => {
                 temp += letters[j];
             }
         }
-        result.push(temp);
+        if (temp) {
+            result.push(temp);
+        }
     }
 
     return result;
@@ -416,4 +421,4 @@ const findLongestPalindrome = (input: string): string => {
 //   ]
 // */
 
-console.log(reverseString('Ya!...!'))
+console.log(subStrings('abc'))

@@ -14,6 +14,16 @@ npm start
 ## Content
 1. `reverseString`  
 This function gets a string input and reverses it. For instance if we pass `Github` as an input to this function, we expect to see `buhtiG` as the result.
+2. `reverseNumber`  
+This function gets a number as an input and reverses it. By passing `123` to this function, we expect to see `321`.
+3. `isPalindrome`  
+Checks whether the given input is [palindrome](https://en.wikipedia.org/wiki/Palindrome) or not. By passing `noon`, we expect to see `true` in the output.
+4. `subStrings`
+Returns all possible letter comibinations of a given input.  
+For instance by passing `abc`, we should see an output as follows: `[a, b, c, ab, ac, bc, abc]`
+
+
+
 
 
 ## Try it yourself
