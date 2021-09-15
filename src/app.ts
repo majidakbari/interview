@@ -15,7 +15,7 @@ const isPalindrome = (input: string): boolean => {
     return input == input.split('').reverse().join('');
 };
 
-// 4.Returns all possible letter comibinations of a given input.
+// 4.Returns all possible letter combinations of a given input.
 const subStrings = (input: string): string[] => {
     const letters = input.split('');
     const combinations = Math.pow(2, input.length);
@@ -81,7 +81,7 @@ const vowelsCount = (input: string): number => {
     return result;
 };
 
-// 10. Checks whether the given number is prime or not.
+// 10.Checks whether the given number is prime or not.
 const isPrime = (input: number): boolean => {
     if (input <= 1) {
         return false;
@@ -96,10 +96,7 @@ const isPrime = (input: number): boolean => {
     return isPrime;
 };
 
-const typeDetector = (input: any): string | [] => {
-    return typeof input;
-};
-
+// 11.Returns I matrix of a given size
 const getIdentityMatrix = (row: number) => {
     let result: any[] = [];
     for (let i = 0; i < row; i++) {
@@ -116,6 +113,7 @@ const getIdentityMatrix = (row: number) => {
     return result;
 };
 
+// 12.Returns the second lowest and second greatest element of an array as a tuple
 const findSecondLowestSecondGreatest = (input: number[]): [number, number] | never => {
     if (input.length < 2) {
         throw new Error('Invalid argument.');
@@ -124,8 +122,9 @@ const findSecondLowestSecondGreatest = (input: number[]): [number, number] | nev
     return [sortedArray[1], sortedArray[input.length - 2]];
 };
 
+// 13.Returns all divisors of a given number
 const findDivisors = (input: number): number[] => {
-    let result: number[] = [];
+    let result = [];
     for (let i = 0; i <= input / 2; i++) {
         if (input % i === 0) {
             result.push(i);
@@ -135,10 +134,12 @@ const findDivisors = (input: number): number[] => {
     return result;
 };
 
+// 14.Adds up all array elements
 const sumArrayElements = (input: number[]): number => {
     return input.reduce((a, b) => a + b, 0);
 };
 
+// 15.Checks if given number is perfect.
 const isPerfect = (input: number): boolean => {
     return input == sumArrayElements(findDivisors(input));
 };
