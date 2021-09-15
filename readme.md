@@ -12,38 +12,38 @@ npm start
 ```
 
 ## Content
-1. `reverseString`  
+1. **reverseString**  
 This function gets a string input and reverses it. For instance if we pass `Github` as an input to this function, we expect to see `buhtiG` as the result.
-2. `reverseNumber`  
+2. **reverseNumber**    
 This function gets a number as an input and reverses it. By passing `123` to this function, we expect to see `321`.
-3. `isPalindrome`  
+3. **isPalindrome**  
 Checks whether the given input is [palindrome](https://en.wikipedia.org/wiki/Palindrome) or not. By passing `noon`, we expect to see `true` in the output.
-4. `subStrings`  
+4. **subStrings**  
 Returns all possible letter comibinations of a given input.  
 For instance by passing `abc`, we should see an output as follows: `[a, b, c, ab, ac, bc, abc]`
-5. `alphabeticalOrder`  
+5. **alphabeticalOrder**  
 Puts a given input letters in alphabetical order. By passing `github`, the output must be `bghitu`.
-6. `ucFirst`  
+6. **ucFirst**  
 Converts the first letter to upper case. By passing `foo` as the input, result will be equal to `Foo`.
-7. `ucFirstPhrase`  
+7. **ucFirstPhrase**  
 Converts the first letter of each word to upper case. So if we pass `john doe` as the input, we expect to see `John Doe`.
-8. `findLongestWord`  
+8. **findLongestWord**  
 Finds the longest word in a given input. If the input was `Git hub is amazing`, the output would be `amazing`.
-9. `vowelsCount`  
+9. **vowelsCount**  
 Finds the number of vowels in a given input. By passing `foo`, we expect to see `2` in result.
-10. `isPrime`  
+10. **isPrime**  
 Checks whether the given number is prime or not. By passing `17` you should see `true` in the output and for instance `15` yields `false`.
-11. `getIdentityMatrix`  
+11. **getIdentityMatrix**  
 Returns [identity matrix](https://en.wikipedia.org/wiki/Identity_matrix) of a given size. By passing `2`, we're supposed to see `[[1, 0], [0, 1]]` in the output.
-12. `findSecondLowestSecondGreatest  `
+12. **findSecondLowestSecondGreatest**  
 Returns the second-lowest and second-greatest element of an array as a tuple. Passing `[1, 6, 2, 3, 7]` yields `[2, 6]` in output.
-13. `findDivisors`  
+13. **findDivisors**  
 Returns all divisors of a given number. For instance by passing `15` you will see the following result: `[1, 3, 5]`.
-14. `sumArrayElements`  
+14. **sumArrayElements**  
 This function Adds up all array elements. If the input equals to `[1, 2, 3]` we will see `6` in output.
-15. `isPerfect`  
+15. **isPerfect**  
 Returns `true` if the given number input is a [perfect number](https://en.wikipedia.org/wiki/Perfect_number).
-
+16.
 
 
 
